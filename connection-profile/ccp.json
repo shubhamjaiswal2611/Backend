@@ -1,0 +1,106 @@
+// {
+//     "version": "1.0",
+//     "organizations": {
+//       "AIST-Member": {
+//         "mspid": "m-3VG7532XLFCD5IKNZQU33NTKBY",
+//         "certificateAuthorities": [
+//           "ca-AIST-Member"
+//         ],
+//         "peers": [
+//           "peer1.AIST-Member"
+//         ]
+//       },
+//       "AIST-Member2": {
+//         "mspid": "m-5TENMGJU6RDSHIFPRTA6Q4A5FA",
+//         "certificateAuthorities": [
+//           "ca-AIST-Member2"
+//         ],
+//         "peers": [
+//           "peer1.AIST-Member2"
+//         ]
+//       }
+//     },
+//     "certificateAuthorities": {
+//       "ca-AIST-Member": {
+//         "url": "https://ca.m-3vg7532xlfcd5iknzqu33ntkby.n-cgfuhott7fbmtp2l2674l2ryqu.managedblockchain.ap-northeast-1.amazonaws.com:30002",
+//         "tlsCACerts": {
+//           "path": "/home/techm1/fabric-client/connection-profile/managedblockchain-tls-chain.pem"
+//         },
+//         "caName": "m-3VG7532XLFCD5IKNZQU33NTKBY"
+//       },
+//       "ca-AIST-Member2": {
+//         "url": "https://ca.m-5tenmgju6rdshifprta6q4a5fa.n-cgfuhott7fbmtp2l2674l2ryqu.managedblockchain.ap-northeast-1.amazonaws.com:30005",
+//         "tlsCACerts": {
+//           "path": "/home/techm1/fabric-client/connection-profile/managedblockchain-tls-chain.pem"
+//         },
+//         "caName": "m-5TENMGJU6RDSHIFPRTA6Q4A5FA"
+//       }
+//     },
+//     "orderers": {
+//       "orderer": {
+//         "url": "grpcs://orderer.n-cgfuhott7fbmtp2l2674l2ryqu.managedblockchain.ap-northeast-1.amazonaws.com:30001",
+//         "grpcOptions": {
+//           "ssl-target-name-override": "orderer.n-cgfuhott7fbmtp2l2674l2ryqu.managedblockchain.ap-northeast-1.amazonaws.com"
+//         },
+//         "tlsCACerts": {
+//           "path": "/home/techm1/fabric-client/connection-profile/managedblockchain-tls-chain.pem"
+//         }
+//       }
+//     },
+//     "peers": {
+//       "peer1.AIST-Member": {
+//         "url": "grpcs://nd-q3uu4tehonaibki7qy2d64jnoa.m-3vg7532xlfcd5iknzqu33ntkby.n-cgfuhott7fbmtp2l2674l2ryqu.managedblockchain.ap-northeast-1.amazonaws.com:30003",
+//         "grpcOptions": {
+//           "ssl-target-name-override": "nd-q3uu4tehonaibki7qy2d64jnoa.m-3vg7532xlfcd5iknzqu33ntkby.n-cgfuhott7fbmtp2l2674l2ryqu.managedblockchain.ap-northeast-1.amazonaws.com"
+//         },
+//         "tlsCACerts": {
+//           "path": "/home/techm1/fabric-client/connection-profile/managedblockchain-tls-chain.pem"
+//         }
+//       },
+//       "peer1.AIST-Member2": {
+//         "url": "grpcs://nd-swzgdzcbsrdbvkkek2einnhu7u.m-5tenmgju6rdshifprta6q4a5fa.n-cgfuhott7fbmtp2l2674l2ryqu.managedblockchain.ap-northeast-1.amazonaws.com:30006",
+//         "grpcOptions": {
+//           "ssl-target-name-override": "nd-swzgdzcbsrdbvkkek2einnhu7u.m-5tenmgju6rdshifprta6q4a5fa.n-cgfuhott7fbmtp2l2674l2ryqu.managedblockchain.ap-northeast-1.amazonaws.com"
+//         },
+//         "tlsCACerts": {
+//           "path": "/home/techm1/fabric-client/connection-profile/managedblockchain-tls-chain.pem"
+//         }
+//       }
+//     },
+//     "channels": {
+//       "recording-channel": {
+//         "orderers": [
+//           "orderer"
+//         ],
+//         "peers": {
+//           "peer1.AIST-Member": {
+//             "endorsingPeer": "true",
+//             "chaincodeQuery": "true",
+//             "ledgerQuery": "true"
+//           },
+//           "peer1.AIST-Member2": {
+//             "endorsingPeer": "true",
+//             "chaincodeQuery": "true",
+//             "ledgerQuery": "true"
+//           }
+//         }
+//       },
+//       "assessment-channel": {
+//         "orderers": [
+//           "orderer"
+//         ],
+//         "peers": {
+//           "peer1.AIST-Member": {
+//             "endorsingPeer": "true",
+//             "chaincodeQuery": "true",
+//             "ledgerQuery": "true"
+//           },
+//           "peer1.AIST-Member2": {
+//             "endorsingPeer": "true",
+//             "chaincodeQuery": "true",
+//             "ledgerQuery": "true"
+//           }
+//         }
+//       }
+//     }
+//   }
